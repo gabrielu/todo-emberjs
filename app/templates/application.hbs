@@ -1,0 +1,16 @@
+<section id="todoapp">
+	<header id="header">
+		<h1>{{#link-to 'index'}}todos{{/link-to}}</h1>
+	</header>
+
+	<input type="text" id="new-todo" onkeydown={{action 'createTodo'}} placeholder="What needs to be done?" autofocus>
+
+	{{outlet}}
+</section>
+
+<p class="task-count">{{taskCount}} Tasks</p>
+
+<footer id="info">
+	<p>Created by Us</p>
+</footer>
+
