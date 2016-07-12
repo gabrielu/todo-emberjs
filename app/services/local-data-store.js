@@ -9,7 +9,7 @@ export default Ember.Service.extend({
 	},
 	findAll() {
 		return this.get('data') ||
-		this.set('data', JSON.parse(window.localStorage.getItem('todos') || '[]'));
+			this.set('data', JSON.parse(window.localStorage.getItem('todos') || '[]'));
 	},
 	lastId: 0,
 	add(attrs) {
